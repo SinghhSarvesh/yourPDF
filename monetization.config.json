@@ -1,0 +1,9 @@
+{
+  "enabled": false,
+  "publisherId": null,
+  "adSlotId": null,
+  "consentConfigured": false,
+  "publicSupportEmail": null,
+  "finalBrandConfirmed": false,
+  "notes": "No ad script is active. Configure verified owner account details and the required consent flow before enabling ads."
+}
