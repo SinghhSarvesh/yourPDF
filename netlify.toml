@@ -1,0 +1,5 @@
+# Publish the ready-built static app, including its PDF assets and headers.
+[build]
+  base = "."
+  publish = "dist"
+  command = ""
