@@ -3,7 +3,7 @@
   "publisherId": "ca-pub-2633783614726816",
   "adSlotId": null,
   "consentConfigured": false,
-  "publicSupportEmail": null,
+  "publicSupportEmail": "sarveshhsingh01@gmail.com",
   "finalBrandConfirmed": false,
   "notes": "Verification-only preparation. Real owner publisher ID creates the AdSense meta tag and ads.txt. Ad serving stays disabled until consent, privacy, CSP and placement are separately configured and verified.",
   "siteUrl": "https://yourspdf.netlify.app"

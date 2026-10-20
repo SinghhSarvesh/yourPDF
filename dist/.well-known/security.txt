@@ -1,0 +1,4 @@
+Contact: mailto:sarveshhsingh01@gmail.com
+Expires: 2027-04-20T00:00:00Z
+Preferred-Languages: en
+Canonical: https://yourspdf.netlify.app/.well-known/security.txt

@@ -1,3 +1,4 @@
+import {openLocalPdf} from './pdf-preview.js';
 import {attachDownload,showEmbeddedNotice} from './downloads.js';
 import {tools,icon} from './catalog.js';
 import {parsePages,validateFiles} from './pdf-core.js';
@@ -40,7 +41,7 @@ function renderList(){
 }
 let pdfjsPromise;
 function pdfjs(){return pdfjsPromise??=import('/vendor/pdf.mjs').then(m=>{m.GlobalWorkerOptions.workerSrc='/vendor/pdf.worker.mjs';return m;});}
-async function openPreview(file){const lib=await pdfjs();return await lib.getDocument({data:new Uint8Array(await file.arrayBuffer()),isEvalSupported:false,cMapUrl:'/vendor/cmaps/',cMapPacked:true,standardFontDataUrl:'/vendor/standard_fonts/',wasmUrl:'/vendor/wasm/',disableAutoFetch:true}).promise;}
+async function openPreview(file){const lib=await pdfjs();return openLocalPdf(lib,new Uint8Array(await file.arrayBuffer()));}
 function buildPages(){
  const show=tool.id!=='images'&&tool.id!=='merge';$('page-grid').hidden=!show;$('page-toolbar').hidden=!show;$('more-previews').hidden=true;if(!show)return;
  $('page-instructions').textContent=tool.id==='remove'?'Tap pages to remove.':tool.id==='organize'?'Select pages to keep. Arrows change the order.':selectable()?'Tap pages to include in your result.':'Page previews · review before processing';$('select-all').hidden=!selectable();$('page-grid').replaceChildren();
