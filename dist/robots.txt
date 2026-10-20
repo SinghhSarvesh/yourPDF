@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 Disallow: /qa.html
-Sitemap: https://application-photo-lab.lucky-ocean-5746.chatgpt.site/sitemap.xml
+Sitemap: https://yourspdf.netlify.app/sitemap.xml

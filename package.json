@@ -1,1 +1,10 @@
-{"name":"application-photo-lab","private":true,"type":"module","scripts":{"test":"node --test tests/*.test.js","dev":"python -m http.server 5173 --directory dist"}}
+{
+  "name": "application-photo-lab",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "dev": "python -m http.server 5173 --directory dist",
+    "build": "node generate-yourpdf.mjs && node release-content.mjs && node scripts/prepare-adsense.mjs"
+  }
+}

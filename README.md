@@ -104,3 +104,10 @@ Local processing, no app accounts/ads, clear up-front limits, sample files and i
 Run `node generate-yourpdf.mjs` followed by `node release-content.mjs` to rebuild the public content. The second script adds original per-tool guidance, license/download help, social metadata and the sitemap. `COMMERCIAL-LAUNCH.md` records domain, Search Console and AdSense steps, current blockers and rights limitations. No ad scripts are active.
 
 New tests exercise the shared saver and the actual processing worker in Node. This adds delivery/serialization coverage, but it is not real browser UI testing.
+
+
+## Netlify deployment and AdSense preparation
+
+The active external deployment is https://yourspdf.netlify.app/. Netlify uses the root `netlify.toml`, runs `npm run build`, and publishes `dist`. The build reads `siteUrl` from `monetization.config.json`; update it when connecting a final custom domain.
+
+See [ADSENSE-SETUP.md](ADSENSE-SETUP.md) for verification and account steps. Advertising is disabled. The build supports a real publisher ID for meta-tag/ads.txt verification and a public support email; it intentionally rejects ad activation until a consent and CSP integration is implemented and verified.
