@@ -5,6 +5,6 @@
   "scripts": {
     "test": "node --test tests/*.test.js",
     "dev": "python -m http.server 5173 --directory dist",
-    "build": "node generate-yourpdf.mjs && node release-content.mjs && node scripts/prepare-adsense.mjs && node scripts/prepare-search.mjs"
+    "build": "node generate-yourpdf.mjs && node release-content.mjs && node scripts/generate-guides.mjs && node scripts/prepare-adsense.mjs && node scripts/prepare-search.mjs"
   }
 }
