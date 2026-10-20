@@ -1,3 +1,4 @@
+import {searchContent} from './search-content.js';
 import {openLocalPdf} from './pdf-preview.js';
 import {attachDownload,showEmbeddedNotice} from './downloads.js';
 import {tools,icon} from './catalog.js';
@@ -29,7 +30,7 @@ function configure(){
  $('options').innerHTML=fields;$('add-files').hidden=!tool.multiple;
  $('operation-note').textContent=tool.id==='images'?'Your source images stay unchanged. Inspect text and small details in the resulting PDF.':'Keep the original. Editing can invalidate signatures. Page-copy operations may omit bookmarks, forms or document-level features.';
  if($('range'))$('range').addEventListener('input',()=>{if(!items.length)return;try{selected=new Set(tool.id==='remove'&&!$('range').value.trim()?[]:parsePages($('range').value,items[0].meta.pages));updateSelection();message();}catch(e){message(e.message,true);}});
- document.title=tool.title+' | yourPDF';
+ document.title=searchContent[tool.slug]?.[0] || tool.title+' | yourPDF';
 }
 function reset(){generation++;activeWorker?.terminate();rejectTask?.(Error('Task cancelled.'));activeWorker=null;rejectTask=null;lock(false);disposePreviews();items=[];selected.clear();order=[];thumbLimit=20;clearResult();$('file-list').replaceChildren();$('page-grid').replaceChildren();$('editor').hidden=true;$('drop').hidden=false;$('files').value='';message();configure();updateSteps(1);}
 function plain(tag,text,cls){const el=document.createElement(tag);el.textContent=text;if(cls)el.className=cls;return el;}
