@@ -48,3 +48,5 @@ const list='<ul>'+guides.map(g=>`<li><a href="/guides/${g.slug}/">${g.title}</a>
 make('guides','Practical PDF and image guides','Worked examples for merging PDFs, preparing signature images and understanding PDF size limits.',`<p>Use these guides alongside the tools. Practice files contain no real personal information. Always follow your recipient’s current requirements and inspect downloaded results.</p>${list}`);
 let home=fs.readFileSync('dist/index.html','utf8').replace(/<section data-guides[\s\S]*?<\/section>/g,'');home=home.replace('</main>',`<section data-guides class="prose"><h2>A little help with your next document</h2>${list}<p><a href="/guides/">Browse all guides</a></p></section></main>`);fs.writeFileSync('dist/index.html',home);
 console.log('Generated three practical guides, a guide index and two synthetic PDF samples.');
+
+await import("./improve-content.mjs");
