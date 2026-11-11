@@ -50,3 +50,4 @@ let home=fs.readFileSync('dist/index.html','utf8').replace(/<section data-guides
 console.log('Generated three practical guides, a guide index and two synthetic PDF samples.');
 
 await import("./improve-content.mjs");
+await import("./refine-workflows.mjs");

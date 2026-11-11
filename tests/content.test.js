@@ -13,7 +13,7 @@ test('published pages have reachable local links, one canonical and unique IDs',
  }
 });
 test('practice outputs match the documented page counts and rotation',async()=>{
- for(const [name,count] of [['page-practice',4],['extract-result',2],['remove-result',3],['organize-result',4],['rotate-result',4],['structure-before',4],['structure-after',4]]){
+ for(const [name,count] of [['page-practice',4],['extract-result',2],['remove-result',3],['organize-result',4],['rotate-result',4],['structure-before',4],['structure-after',4],['application-merged',3],['application-selected',2]]){
  const d=await PDFDocument.load(fs.readFileSync(`dist/samples/${name}.pdf`));assert.equal(d.getPageCount(),count,name);
  if(name==='rotate-result')assert.deepEqual(d.getPages().map(p=>p.getRotation().angle),[0,0,90,0]);
  }
