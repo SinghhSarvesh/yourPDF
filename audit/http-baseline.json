@@ -1,0 +1,305 @@
+{
+  "method": "HTTP-only urllib, three sequential fetches per URL; four concurrent URL groups; no browser rendering, device or CPU throttling. Environment latency is included. Not Core Web Vitals.",
+  "rows": [
+    {
+      "path": "/",
+      "runs": [
+        {
+          "status": 200,
+          "ttfb_ms": 7726.1,
+          "total_ms": 7772.81,
+          "bytes": 16287,
+          "sha256": "0981a76e62019e821dd7ce1e2de4d579d5d3c6df54ea267fabc9a343ac93a813",
+          "cache_control": "public,max-age=0,must-revalidate"
+        },
+        {
+          "status": 200,
+          "ttfb_ms": 6830.05,
+          "total_ms": 6875.89,
+          "bytes": 16287,
+          "sha256": "0981a76e62019e821dd7ce1e2de4d579d5d3c6df54ea267fabc9a343ac93a813",
+          "cache_control": "public,max-age=0,must-revalidate"
+        },
+        {
+          "status": 200,
+          "ttfb_ms": 6958.06,
+          "total_ms": 6958.26,
+          "bytes": 16287,
+          "sha256": "0981a76e62019e821dd7ce1e2de4d579d5d3c6df54ea267fabc9a343ac93a813",
+          "cache_control": "public,max-age=0,must-revalidate"
+        }
+      ],
+      "median_total_ms": 6958.26
+    },
+    {
+      "path": "/merge-pdf/",
+      "runs": [
+        {
+          "status": 200,
+          "ttfb_ms": 7714.56,
+          "total_ms": 7759.75,
+          "bytes": 10609,
+          "sha256": "c9741454182e4064c457a4bb581132dae753db24c8a9298c6dde326662035022",
+          "cache_control": "public,max-age=0,must-revalidate"
+        },
+        {
+          "status": 200,
+          "ttfb_ms": 6879.49,
+          "total_ms": 6879.71,
+          "bytes": 10609,
+          "sha256": "c9741454182e4064c457a4bb581132dae753db24c8a9298c6dde326662035022",
+          "cache_control": "public,max-age=0,must-revalidate"
+        },
+        {
+          "status": 200,
+          "ttfb_ms": 6976.91,
+          "total_ms": 7012.02,
+          "bytes": 10609,
+          "sha256": "c9741454182e4064c457a4bb581132dae753db24c8a9298c6dde326662035022",
+          "cache_control": "public,max-age=0,must-revalidate"
+        }
+      ],
+      "median_total_ms": 7012.02
+    },
+    {
+      "path": "/photo/",
+      "runs": [
+        {
+          "status": 200,
+          "ttfb_ms": 7732.25,
+          "total_ms": 7732.99,
+          "bytes": 11743,
+          "sha256": "cfde6baaf1fe480d18f0368de89bb3a22ff5bb57b91d288db42fa0f54ad4c39e",
+          "cache_control": "public,max-age=0,must-revalidate"
+        },
+        {
+          "status": 200,
+          "ttfb_ms": 7121.24,
+          "total_ms": 7121.55,
+          "bytes": 11743,
+          "sha256": "cfde6baaf1fe480d18f0368de89bb3a22ff5bb57b91d288db42fa0f54ad4c39e",
+          "cache_control": "public,max-age=0,must-revalidate"
+        },
+        {
+          "status": 200,
+          "ttfb_ms": 6498.85,
+          "total_ms": 6541.85,
+          "bytes": 11743,
+          "sha256": "cfde6baaf1fe480d18f0368de89bb3a22ff5bb57b91d288db42fa0f54ad4c39e",
+          "cache_control": "public,max-age=0,must-revalidate"
+        }
+      ],
+      "median_total_ms": 7121.55
+    },
+    {
+      "path": "/signature/",
+      "runs": [
+        {
+          "status": 200,
+          "ttfb_ms": 7686.6,
+          "total_ms": 7729.51,
+          "bytes": 11890,
+          "sha256": "6b5b90e412371c40679eb7e6359c3bdde1e49b0557e9a1803ad5eb4b9803d48b",
+          "cache_control": "public,max-age=0,must-revalidate"
+        },
+        {
+          "status": 200,
+          "ttfb_ms": 7157.35,
+          "total_ms": 7157.52,
+          "bytes": 11890,
+          "sha256": "6b5b90e412371c40679eb7e6359c3bdde1e49b0557e9a1803ad5eb4b9803d48b",
+          "cache_control": "public,max-age=0,must-revalidate"
+        },
+        {
+          "status": 200,
+          "ttfb_ms": 6510.53,
+          "total_ms": 6555.25,
+          "bytes": 11890,
+          "sha256": "6b5b90e412371c40679eb7e6359c3bdde1e49b0557e9a1803ad5eb4b9803d48b",
+          "cache_control": "public,max-age=0,must-revalidate"
+        }
+      ],
+      "median_total_ms": 7157.52
+    },
+    {
+      "path": "/pdf-to-jpg/",
+      "runs": [
+        {
+          "status": 200,
+          "ttfb_ms": 7269.52,
+          "total_ms": 7269.74,
+          "bytes": 10106,
+          "sha256": "13559bd2d83ed5e3544a382799cd51e6ae9b78d3cb40ce54541ff4ae90275813",
+          "cache_control": "public,max-age=0,must-revalidate"
+        },
+        {
+          "status": 200,
+          "ttfb_ms": 5627.51,
+          "total_ms": 5627.71,
+          "bytes": 10106,
+          "sha256": "13559bd2d83ed5e3544a382799cd51e6ae9b78d3cb40ce54541ff4ae90275813",
+          "cache_control": "public,max-age=0,must-revalidate"
+        },
+        {
+          "status": 200,
+          "ttfb_ms": 6934.24,
+          "total_ms": 6990.43,
+          "bytes": 10106,
+          "sha256": "13559bd2d83ed5e3544a382799cd51e6ae9b78d3cb40ce54541ff4ae90275813",
+          "cache_control": "public,max-age=0,must-revalidate"
+        }
+      ],
+      "median_total_ms": 6990.43
+    },
+    {
+      "path": "/guides/prepare-application-documents/",
+      "runs": [
+        {
+          "status": 200,
+          "ttfb_ms": 7127.58,
+          "total_ms": 7127.76,
+          "bytes": 8596,
+          "sha256": "f58b81646ddad2e595456e5691195543072b39de5e4342a9cad47a446cb8e64a",
+          "cache_control": "public,max-age=0,must-revalidate"
+        },
+        {
+          "status": 200,
+          "ttfb_ms": 5476.66,
+          "total_ms": 5519.52,
+          "bytes": 8596,
+          "sha256": "f58b81646ddad2e595456e5691195543072b39de5e4342a9cad47a446cb8e64a",
+          "cache_control": "public,max-age=0,must-revalidate"
+        },
+        {
+          "status": 200,
+          "ttfb_ms": 7343.2,
+          "total_ms": 7343.44,
+          "bytes": 8596,
+          "sha256": "f58b81646ddad2e595456e5691195543072b39de5e4342a9cad47a446cb8e64a",
+          "cache_control": "public,max-age=0,must-revalidate"
+        }
+      ],
+      "median_total_ms": 7127.76
+    },
+    {
+      "path": "/download-help/",
+      "runs": [
+        {
+          "status": 200,
+          "ttfb_ms": 6901.39,
+          "total_ms": 6901.55,
+          "bytes": 4872,
+          "sha256": "b6be9a3fce6ebf4ca7c7d562c570f9da9214650a9565ce90689f52ee316ca1b8",
+          "cache_control": "public,max-age=0,must-revalidate"
+        },
+        {
+          "status": 200,
+          "ttfb_ms": 5717.37,
+          "total_ms": 5717.52,
+          "bytes": 4872,
+          "sha256": "b6be9a3fce6ebf4ca7c7d562c570f9da9214650a9565ce90689f52ee316ca1b8",
+          "cache_control": "public,max-age=0,must-revalidate"
+        },
+        {
+          "status": 200,
+          "ttfb_ms": 7036.13,
+          "total_ms": 7036.31,
+          "bytes": 4872,
+          "sha256": "b6be9a3fce6ebf4ca7c7d562c570f9da9214650a9565ce90689f52ee316ca1b8",
+          "cache_control": "public,max-age=0,must-revalidate"
+        }
+      ],
+      "median_total_ms": 6901.55
+    },
+    {
+      "path": "/pdf-app.js",
+      "runs": [
+        {
+          "status": 200,
+          "ttfb_ms": 6857.75,
+          "total_ms": 6901.11,
+          "bytes": 21360,
+          "sha256": "39002dbed2d048410b7c0d4a9709c00f59678f7fb25db28f34a55b420e62ca67",
+          "cache_control": "public,max-age=0,must-revalidate"
+        },
+        {
+          "status": 200,
+          "ttfb_ms": 5507.38,
+          "total_ms": 5551.38,
+          "bytes": 21360,
+          "sha256": "39002dbed2d048410b7c0d4a9709c00f59678f7fb25db28f34a55b420e62ca67",
+          "cache_control": "public,max-age=0,must-revalidate"
+        },
+        {
+          "status": 200,
+          "ttfb_ms": 7386.45,
+          "total_ms": 7386.64,
+          "bytes": 21360,
+          "sha256": "39002dbed2d048410b7c0d4a9709c00f59678f7fb25db28f34a55b420e62ca67",
+          "cache_control": "public,max-age=0,must-revalidate"
+        }
+      ],
+      "median_total_ms": 6901.11
+    },
+    {
+      "path": "/pdf-core.js",
+      "runs": [
+        {
+          "status": 200,
+          "ttfb_ms": 7185.1,
+          "total_ms": 7185.24,
+          "bytes": 6885,
+          "sha256": "0ec2dafb42b6c8a2ebde2b4353353e9ed01f7ff377ab08f67ad9f81e90676b91",
+          "cache_control": "public,max-age=0,must-revalidate"
+        },
+        {
+          "status": 200,
+          "ttfb_ms": 7105.89,
+          "total_ms": 7106.12,
+          "bytes": 6885,
+          "sha256": "0ec2dafb42b6c8a2ebde2b4353353e9ed01f7ff377ab08f67ad9f81e90676b91",
+          "cache_control": "public,max-age=0,must-revalidate"
+        },
+        {
+          "status": 200,
+          "ttfb_ms": 7704.33,
+          "total_ms": 7705.82,
+          "bytes": 6885,
+          "sha256": "0ec2dafb42b6c8a2ebde2b4353353e9ed01f7ff377ab08f67ad9f81e90676b91",
+          "cache_control": "public,max-age=0,must-revalidate"
+        }
+      ],
+      "median_total_ms": 7185.24
+    },
+    {
+      "path": "/vendor/pdf-lib.js",
+      "runs": [
+        {
+          "status": 200,
+          "ttfb_ms": 7025.97,
+          "total_ms": 7277.06,
+          "bytes": 523417,
+          "sha256": "72c052d97b4d5d9fa6cdbdcb7ad709f03d4ddb1122390cb3afeba4d88651d969",
+          "cache_control": "public,max-age=0,must-revalidate"
+        },
+        {
+          "status": 200,
+          "ttfb_ms": 7517.09,
+          "total_ms": 8605.47,
+          "bytes": 523417,
+          "sha256": "72c052d97b4d5d9fa6cdbdcb7ad709f03d4ddb1122390cb3afeba4d88651d969",
+          "cache_control": "public,max-age=0,must-revalidate"
+        },
+        {
+          "status": 200,
+          "ttfb_ms": 6336.36,
+          "total_ms": 7015.43,
+          "bytes": 523417,
+          "sha256": "72c052d97b4d5d9fa6cdbdcb7ad709f03d4ddb1122390cb3afeba4d88651d969",
+          "cache_control": "public,max-age=0,must-revalidate"
+        }
+      ],
+      "median_total_ms": 7277.06
+    }
+  ]
+}
