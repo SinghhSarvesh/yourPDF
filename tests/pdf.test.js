@@ -20,3 +20,11 @@ test('actual 151-page input is rejected',async()=>{const d=await PDFDocument.cre
 test('CRC32 reference vector and ZIP archive can be independently inspected',async()=>{assert.equal(crc32(new TextEncoder().encode('123456789')),0xcbf43926);const r=await perform('split',[original],{pages:'1-2',separate:true});const zip=makeZip(r.files);fs.mkdirSync('/tmp/yourpdf-tests',{recursive:true});fs.writeFileSync('/tmp/yourpdf-tests/split.zip',zip);fs.writeFileSync('/tmp/yourpdf-tests/numbered.pdf',(await perform('numbers',[original])).bytes);fs.writeFileSync('/tmp/yourpdf-tests/watermarked.pdf',(await perform('watermark',[original],{text:'REVIEW'})).bytes);});
 test('encrypted PDFs are explicitly rejected',async()=>{await assert.rejects(()=>loadPdf(fs.readFileSync(new URL('./fixtures/encrypted.pdf',import.meta.url))),/Password-protected/);});
 test('merged total page limit is enforced',async()=>{const d=await PDFDocument.create();for(let i=0;i<80;i++)d.addPage();const bytes=await d.save();await assert.rejects(()=>perform('merge',[bytes,bytes]),/combined task exceeds/);});
+
+test('exact byte/file limits and 150-page processing are accepted',async()=>{
+ validateFiles([{size:30*1024*1024}]);validateFiles(Array.from({length:20},()=>({size:1})));
+ assert.throws(()=>validateFiles([{size:30*1024*1024+1}]));
+ const d=await PDFDocument.create();for(let i=0;i<150;i++)d.addPage([400+i,600]);
+ const result=await perform('extract',[await d.save()],{pages:'150,1'});
+ const out=await loadPdf(result.bytes);assert.deepEqual(out.getPages().map(p=>p.getWidth()),[549,400]);
+});

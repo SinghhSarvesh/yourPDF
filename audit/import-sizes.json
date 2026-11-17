@@ -1,0 +1,28 @@
+{
+  "method": "Static ES module import closure; uncompressed source bytes, not wire bytes or loading duration. Dynamic imports excluded.",
+  "baseline_commit": "5e1efaa3e12aa7526550518dd9687923e1a36ffe",
+  "before": {
+    "raw_bytes": 563291,
+    "modules": {
+      "pdf-app.js": 21360,
+      "search-content.js": 3611,
+      "pdf-preview.js": 711,
+      "downloads.js": 3886,
+      "catalog.js": 3421,
+      "pdf-core.js": 6885,
+      "vendor/pdf-lib.js": 523417
+    }
+  },
+  "after": {
+    "raw_bytes": 35150,
+    "modules": {
+      "pdf-app.js": 21044,
+      "search-content.js": 3611,
+      "pdf-preview.js": 711,
+      "downloads.js": 3886,
+      "catalog.js": 3421,
+      "pdf-input.js": 1026,
+      "worker-task.js": 1451
+    }
+  }
+}
